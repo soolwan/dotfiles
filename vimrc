@@ -20,7 +20,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 " UI
 Bundle 'scrooloose/nerdtree'
-Bundle 'shelling/railscasts.vim'
+Bundle 'vim-scripts/molokai'
 " Automatic Helpers
 Bundle 'scrooloose/syntastic'
 Bundle 'garbas/vim-snipmate'
@@ -45,6 +45,8 @@ Bundle 'tpope/vim-cucumber'
 " Haml
 Bundle 'tpope/vim-haml'
 
+Bundle 'ervandew/supertab'
+
 filetype plugin indent on " Turn on filetype plugins (:help filetype-plugin)
 
 
@@ -52,7 +54,7 @@ filetype plugin indent on " Turn on filetype plugins (:help filetype-plugin)
 "" Color
 ""
 set background=dark
-colorscheme RailsCasts
+colorscheme Molokai
 
 
 ""
