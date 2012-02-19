@@ -1,4 +1,4 @@
-""
+
 "" Vundle
 ""
 set nocompatible  " be iMproved
@@ -20,13 +20,16 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 " UI
 Bundle 'scrooloose/nerdtree'
-Bundle 'vim-scripts/molokai'
+Bundle 'altercation/vim-colors-solarized'
 " Automatic Helpers
 Bundle 'scrooloose/syntastic'
 Bundle 'garbas/vim-snipmate'
 Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'honza/snipmate-snippets'
+Bundle 'ervandew/supertab'
+" Python
+Bundle 'nvie/vim-flake8'
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-endwise'
@@ -45,8 +48,6 @@ Bundle 'tpope/vim-cucumber'
 " Haml
 Bundle 'tpope/vim-haml'
 
-Bundle 'ervandew/supertab'
-
 filetype plugin indent on " Turn on filetype plugins (:help filetype-plugin)
 
 
@@ -54,7 +55,7 @@ filetype plugin indent on " Turn on filetype plugins (:help filetype-plugin)
 "" Color
 ""
 set background=dark
-colorscheme Molokai
+colorscheme solarized
 
 
 ""
@@ -86,10 +87,10 @@ set smarttab  " Smarter tab levels
 set backspace=indent,eol,start  " Backspace through everything in insert mode
 
 let c_space_errors = 1
-let ruby_space_errors = 1
 let python_highlight_indent_errors = 1
 let python_highlight_space_errors = 1
 let python_highlight_all = 1
+let ruby_space_errors = 1
 
 
 ""
