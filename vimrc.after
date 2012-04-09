@@ -1,0 +1,10 @@
+set background=dark
+color solarized
+
+set t_Co=256
+set visualbell
+
+" Fix CoffeeScript highlighting.
+hi link coffeeSpecialVar Identifier
+
+let g:ctrlp_working_path_mode = 0

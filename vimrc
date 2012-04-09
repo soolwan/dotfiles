@@ -1,4 +1,4 @@
-
+""
 "" Vundle
 ""
 set nocompatible  " be iMproved
@@ -17,36 +17,33 @@ Bundle 'gmarik/vundle'
 ""
 
 " Navigation
-Bundle 'kien/ctrlp.vim'
+"Bundle 'kien/ctrlp.vim'
 " UI
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 " Automatic Helpers
-Bundle 'scrooloose/syntastic'
-Bundle 'garbas/vim-snipmate'
-Bundle 'tomtom/tlib_vim'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'honza/snipmate-snippets'
-Bundle 'ervandew/supertab'
-" Python
-Bundle 'nvie/vim-flake8'
+"Bundle 'scrooloose/syntastic'
+"Bundle 'garbas/vim-snipmate'
+"Bundle 'tomtom/tlib_vim'
+"Bundle 'MarcWeber/vim-addon-mw-utils'
+"Bundle 'honza/snipmate-snippets'
 " Ruby
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-endwise'
+"Bundle 'vim-ruby/vim-ruby'
+"Bundle 'tpope/vim-endwise'
 " Rails
-Bundle 'tpope/vim-rails'
+"Bundle 'tpope/vim-rails'
 " JavaScript
-Bundle 'pangloss/vim-javascript'
+"Bundle 'pangloss/vim-javascript'
 " CoffeeScript
-Bundle 'kchmck/vim-coffee-script'
+"Bundle 'kchmck/vim-coffee-script'
 " SCSS
-Bundle 'cakebaker/scss-syntax.vim'
+"Bundle 'cakebaker/scss-syntax.vim'
 " RSPEC
-Bundle 'skwp/vim-rspec'
+"Bundle 'skwp/vim-rspec'
 " Cucumber
-Bundle 'tpope/vim-cucumber'
+"Bundle 'tpope/vim-cucumber'
 " Haml
-Bundle 'tpope/vim-haml'
+"Bundle 'tpope/vim-haml'
 
 filetype plugin indent on " Turn on filetype plugins (:help filetype-plugin)
 
@@ -65,9 +62,7 @@ set number  " Show line numbers
 set ruler  " Show line and column number
 set showmode  " Show the mode
 set showcmd  " Keyboard input state
-set nowrap  " Line wrapping off
 set cursorline  " Highlight cursor line
-set encoding=utf-8  "Set default encoding to UTF-8
 
 
 ""
@@ -75,22 +70,28 @@ set encoding=utf-8  "Set default encoding to UTF-8
 ""
 set ttyfast
 syntax enable
+set encoding=utf-8  "Set default encoding to UTF-8
 
 
 ""
 "" Whitespace
 ""
-set tabstop=2
-set shiftwidth=2  " Default shift width for indents
-set expandtab  " Make tabs into spaces
-set smarttab  " Smarter tab levels
+
+set nowrap  " don't wrap lines
+set tabstop=2  " a tab is two spaces
+set shiftwidth=2  " an autoindent (with <<) is two spaces
+set expandtab  " use spaces, not tabs
+set list  " Show invisible characters
 set backspace=indent,eol,start  " Backspace through everything in insert mode
 
-let c_space_errors = 1
-let python_highlight_indent_errors = 1
-let python_highlight_space_errors = 1
-let python_highlight_all = 1
-let ruby_space_errors = 1
+" List chars
+set listchars=""  " Reset the listchars
+set listchars=tab:\ \  " a tab should display as "  ", trailing whitespace as "."
+set listchars+=trail:.  " show trailing spaces as dots
+set listchars+=extends:>  " The character to show in the last column when wrap is
+                          " off and the line continues beyond the right of the screen
+set listchars+=precedes:<  " The character to show in the last column when wrap is
+                           " off and the line continues beyond the right of the screen
 
 
 ""
@@ -177,8 +178,13 @@ endif
 ""
 
 let mapleader = ","  " This line MUST come before any <leader> mappings
-inoremap jj <Esc>  " jj functions as escape
-nnoremap <leader><space> :noh<cr>  " Clear search highlights
+
+" Toggle paste mode
+nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
+imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
+
+" Toggle hlsearch with <leader>hs
+nmap <leader>hs :set hlsearch! hlsearch?<CR>
 
 
 ""
@@ -196,7 +202,7 @@ let g:ctrlp_custom_ignore = {
    \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\',
    \ }
 
-" nerdtree
+" NERDtree
 nmap <Leader>n :NERDTreeToggle<CR>
 
 

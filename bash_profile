@@ -1,11 +1,4 @@
-# ls colors
-alias ls='ls -G'
-
-# Initialize rbenv
-eval "$(rbenv init -)"
-
-# Load pythonbrew
-[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
-
-# load Node Version Manager
-. ~/.nvm/nvm.sh
+# Load .bashrc like other unices.
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
