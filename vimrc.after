@@ -1,5 +1,10 @@
 set background=light
 color hemisu
+
+set t_Co=256
 set cursorline
+
+" Fix CoffeeScript highlighting.
+" hi link coffeeSpecialVar Identifier
 
 let g:ctrlp_working_path_mode = 0
