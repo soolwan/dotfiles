@@ -28,7 +28,9 @@
         "waits",
         "waitsFor",
         "runs",
-        "Modernizr"
+        "Modernizr",
+        "Backbone",
+        "_"
     ],
 
 
