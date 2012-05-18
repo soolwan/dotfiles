@@ -3,6 +3,7 @@ color hemisu
 
 " Let the noise show.
 hi Normal ctermfg=233 ctermbg=none
+hi Comment ctermfg=241 ctermbg=none
 
 set t_Co=256
 set cursorline
