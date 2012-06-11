@@ -49,7 +49,7 @@
     "asi"           : false,
     "laxbreak"      : false,
     "bitwise"       : true,
-    "boss"          : false,
+    "boss"          : true,
     "curly"         : false,
     "eqeqeq"        : true,
     "eqnull"        : false,
