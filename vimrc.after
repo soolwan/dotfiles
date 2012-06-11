@@ -1,16 +1,7 @@
-set background=light
-color hemisu
-
-" Let the noise show.
-hi Normal ctermfg=233 ctermbg=none
-
-" Darken the comments a bit.
-hi Comment ctermfg=241 ctermbg=none
+set background=dark
+color solarized
 
 set t_Co=256
 set cursorline
-
-" Fix CoffeeScript highlighting.
-" hi link coffeeSpecialVar Identifier
 
 let g:ctrlp_working_path_mode = 0
