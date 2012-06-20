@@ -1,7 +1,8 @@
-set background=dark
-color solarized
-
 set t_Co=256
-set cursorline
 
 let g:ctrlp_working_path_mode = 0
+
+" Use four spaces for c code.
+if has("autocmd")
+  au FileType c setlocal softtabstop=4 tabstop=4 shiftwidth=4
+end
