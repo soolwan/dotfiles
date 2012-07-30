@@ -10,6 +10,3 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Add rbenv init to your shell to enable shims and autocompletion.
 eval "$(rbenv init -)"
-
-# load Node Version Manager.
-. ~/.nvm/nvm.sh
