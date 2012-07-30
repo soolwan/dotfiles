@@ -5,9 +5,6 @@ fi
 # Put local directories at the beginning to prefer homebrew/user packages (impacts pg gem).
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 
-# Prepend brew-installed python install-scripts.
-export PATH=/usr/local/share/python:$PATH
-
 # Add ~/.rbenv/bin to your $PATH for access to the rbenv command-line utility.
 export PATH="$HOME/.rbenv/bin:$PATH"
 
