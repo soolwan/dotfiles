@@ -1,8 +1,11 @@
 set t_Co=256
+set background=light
+color hemisu
 
 let g:ctrlp_working_path_mode = 0
 
 " Use four spaces for c code.
 if has("autocmd")
   au FileType c setlocal softtabstop=4 tabstop=4 shiftwidth=4
+  au FileType objc setlocal softtabstop=4 tabstop=4 shiftwidth=4
 end
