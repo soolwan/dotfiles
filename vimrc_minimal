@@ -1,0 +1,15 @@
+set encoding=utf-8
+filetype plugin indent on
+syntax on
+color hemisu
+
+set autoindent
+set smartindent
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4
+set expandtab
+
+set number
+set ruler
+set backspace=indent,eol,start
