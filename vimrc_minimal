@@ -1,7 +1,8 @@
 set encoding=utf-8
 filetype plugin indent on
 syntax on
-color hemisu
+set background=dark
+color solarized
 
 set autoindent
 set smartindent
