@@ -5,9 +5,7 @@ fi
 # Put local directories at the beginning to prefer homebrew/user packages.
 export PATH="/usr/local/bin:$PATH"
 
-# Add the path for rbenv and run its init script.
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 # Initialize nvm.
 . ~/nvm/nvm.sh
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
