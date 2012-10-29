@@ -1,6 +1,8 @@
 set t_Co=256
-set background=dark
-color sunburst
+set background=light
+color github
+" Fix github theme comment colors.
+hi Comment guifg=#AAAAAA ctermfg=248  gui=ITALIC cterm=NONE
 
 let g:ctrlp_working_path_mode = 0
 
