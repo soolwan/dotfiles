@@ -1,6 +1,6 @@
 set t_Co=256
 set background=dark
-color hemisu
+color sunburst
 
 let g:ctrlp_working_path_mode = 0
 
