@@ -1,10 +1,11 @@
 set t_Co=256
 set background=light
 color github
-" Fix github theme comment colors.
-hi Comment guifg=#AAAAAA ctermfg=248  gui=ITALIC cterm=NONE
-
-let g:ctrlp_working_path_mode = 0
+" My github theme fixes.
+hi Comment ctermfg=248 cterm=NONE
+hi PreProc ctermfg=16 cterm=BOLD
+hi rubyRegexp ctermfg=green term=NONE
+hi rubyRegexpDelimiter ctermfg=green cterm=NONE
 
 " Use four spaces for c code.
 if has("autocmd")
