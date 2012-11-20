@@ -1,18 +1,9 @@
 set t_Co=256
-set background=light
-color github
-" My github theme fixes.
-hi Comment ctermfg=248 cterm=NONE
-hi PreProc ctermfg=16 cterm=BOLD
-hi rubyRegexp ctermfg=green term=NONE
-hi rubyRegexpDelimiter ctermfg=green cterm=NONE
+set background=dark
+color solarized
 
 " Use four spaces for c code.
 if has("autocmd")
   au FileType c setlocal softtabstop=4 tabstop=4 shiftwidth=4
   au FileType objc setlocal softtabstop=4 tabstop=4 shiftwidth=4
 end
-
-if janus#is_plugin_enabled('syntastic')
-  let g:syntastic_html_checker="w3"
-endif
