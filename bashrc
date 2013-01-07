@@ -8,5 +8,5 @@ export PATH="/usr/local/bin:$PATH"
 # Initialize nvm.
 . ~/nvm/nvm.sh
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# Initialize rbenv.
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
