@@ -1,4 +1,4 @@
-set guifont=Menlo\ Regular:h12
+set guifont=Menlo\ Regular:h11
 set vb
 
 " Remove all the UI cruft
