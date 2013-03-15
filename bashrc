@@ -6,8 +6,8 @@ fi
 export PATH="/usr/local/bin:$PATH"
 
 # Initialize nvm.
-. ~/nvm/nvm.sh
+[[ -s /Users/soolwan/.nvm/nvm.sh ]] && . /Users/soolwan/.nvm/nvm.sh # This loads NVM
 
 # Initialize rbenv.
 export PATH="$HOME/.rbenv/bin:$PATH"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+eval "$(rbenv init -)"
