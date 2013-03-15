@@ -1,5 +1,3 @@
 let mapleader = ","
 set foldmethod=indent
 set foldlevelstart=99
-
-call janus#disable_plugin('css-color')
