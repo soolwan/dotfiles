@@ -1,14 +1,11 @@
 set encoding=utf-8
 filetype plugin indent on
-syntax on
-set background=dark
-color solarized
 
 set autoindent
 set smartindent
-set softtabstop=4
-set shiftwidth=4
-set tabstop=4
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
 set expandtab
 
 set number
