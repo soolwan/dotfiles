@@ -1,0 +1,52 @@
+encoding = "UTF-8"
+
+# Extra files to include
+myExtraIncludes = ".tm_properties,.htaccess,.gitignore"
+fileBrowserGlob  = "{*,$myExtraIncludes}"
+include = "{$include,$myExtraIncludes}"
+
+# Hide log, vendor and tmp directories from search popups.
+myExtraExcludes = "log,vendor,tmp"
+excludeInFileChooser  = "{$excludeInFileChooser,$myExtraExcludes}"
+excludeInFolderSearch = "{$excludeInFolderSearch,$myExtraExcludes}"
+
+fontName         = "Menlo"
+fontSize         = 11
+
+# Variables
+PATH             = "$PATH:$HOME/bin"
+TM_GIT           = "/usr/local/bin/git"
+TM_RUBY          = "/Users/soolwan/.rbenv/shims/ruby"
+
+# General Settings
+showInvisibles      = true
+spellChecking       = true
+
+[ text ]
+softWrap            = false
+softTabs            = true
+tabSize             = 2
+
+[ text.html.markdown ]
+softWrap            = true
+wrapColumn          = "Use Window Frame"
+softTabs            = false
+tabSize             = 4
+
+[ text.plain ]
+softWrap            = true
+wrapColumn          = "Use Window Frame"
+softTabs            = false
+tabSize             = 4
+
+[ source ]
+softWrap            = false
+softTabs            = true
+tabSize             = 2
+
+[ source.plist ]
+softTabs            = false
+tabSize             = 4
+
+[ source.tm-properties ]
+spellChecking       = false
