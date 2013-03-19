@@ -1,6 +1,7 @@
 set t_Co=256
 set background=light
-color github
+color lucius
+LuciusWhite
 
 " Solarized -------------------------------------------------------------- {{{
 
