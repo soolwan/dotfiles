@@ -1,3 +1,4 @@
 let mapleader = ","
 set foldmethod=indent
 set foldlevelstart=99
+let g:syntastic_ruby_checkers=['rubocop']
