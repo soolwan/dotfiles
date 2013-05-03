@@ -3,6 +3,8 @@ set background=light
 color lucius
 LuciusWhite
 
+set mouse=a
+
 " Use four spaces for c code.
 if has("autocmd")
   au FileType c setlocal softtabstop=4 tabstop=4 shiftwidth=4
