@@ -1,14 +1,22 @@
 export EDITOR=vim
 
-# Put local directories at the beginning to prefer homebrew/user packages.
-export PATH="/usr/local/bin:$PATH"
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-# Initialize nvm.
-[[ -s /Users/soolwan/.nvm/nvm.sh ]] && . /Users/soolwan/.nvm/nvm.sh # This loads NVM
+# Include .bashrc if it exists.
+if [ -f "$HOME/.bashrc" ]; then
+  . "$HOME/.bashrc"
+fi
+
+# Set PATH so it includes user's private bin if it exists.
+if [ -d "$HOME/bin" ] ; then
+  PATH="$HOME/bin:$PATH"
+fi
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+PATH="/usr/local/heroku/bin:$PATH"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# rbenv
+PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
-alias bx='bundle exec '
+export PATH
