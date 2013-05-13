@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="sammy"
+ZSH_THEME="simple"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -42,5 +42,21 @@ DISABLE_LS_COLORS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(rails git ruby bundler)
+
+export EDITOR=vim
+
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+### Added by the Heroku Toolbelt
+PATH="/usr/local/heroku/bin:$PATH"
+
+# rbenv
+PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# Initialize nvm.
+. ~/.nvm/nvm.sh
+
+export PATH
 
 source $ZSH/oh-my-zsh.sh
