@@ -3,7 +3,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local:/usr/local/bin:/usr/local/share/pypy:$PATH
 
 # rbenv
 PATH=$HOME/.rbenv/bin:$PATH

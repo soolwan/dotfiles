@@ -17,8 +17,14 @@ excludeInFolderSearch = "{$excludeInFolderSearch,$myExtraExcludes}"
 # If you also want to hide them from your project manager pane, add
 # the following line to your project's local .tm_properties.
 #
-excludeInBrowser      = "{$excludeInBrowser,log,vendor,tmp,_site}"
+excludeInBrowser = "{$excludeInBrowser,log,vendor,tmp,_site}"
 
+# Language Paths
+TM_PYTHON = "/usr/local/bin/python"
+PYTHONPATH = "/usr/local/lib/python2.7/site-packages"
+TM_PYCHECKER = "/usr/local/bin/flake8"
+
+TM_RUBY = "$HOME/.rbenv/shims/ruby"
 
 # Configure git and hg
 #
