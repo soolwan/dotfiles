@@ -1,11 +1,9 @@
 set t_Co=256
-set background=Dark
+set background=dark
 color lucius
-LuciusDark
+LuciusBlack
 
-" Use four spaces for c, Objective-C, and Swift.
 if has("autocmd")
   au FileType c setlocal softtabstop=4 tabstop=4 shiftwidth=4
   au FileType objc setlocal softtabstop=4 tabstop=4 shiftwidth=4
-  au FileType swift setlocal softtabstop=4 tabstop=4 shiftwidth=4
 end
