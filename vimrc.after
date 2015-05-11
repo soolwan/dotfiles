@@ -1,7 +1,7 @@
 set t_Co=256
 set background=dark
 color lucius
-LuciusBlack
+LuciusWhite
 
 if has("autocmd")
   au FileType c setlocal softtabstop=4 tabstop=4 shiftwidth=4

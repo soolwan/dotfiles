@@ -1,5 +1,4 @@
-"set guifont=Menlo\ Regular:h11
-set guifont=Monaco:h11
+set guifont=Menlo\ Regular:h11
 set vb
 
 " Remove all the UI cruft
